@@ -1,12 +1,10 @@
 {
-  "name": "ressources-sant-pr-carit",
+  "name": "resap",
   "version": "1.0.0",
   "private": true,
-  "description": "« Ressources Santé Précarité",
+  "description": "Ressources Santé Précarité",
   "author": "Mathieu TUDISCO",
-  "keywords": [
-    "gatsby"
-  ],
+  "keywords": [],
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
@@ -15,6 +13,7 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@contentful/rich-text-html-renderer": "^14.1.2",
     "gatsby": "^3.4.1",
     "gatsby-plugin-image": "^1.5.0",
     "gatsby-plugin-manifest": "^3.5.0",
@@ -26,8 +25,14 @@
     "gatsby-source-filesystem": "^3.5.0",
     "gatsby-transformer-sharp": "^3.5.0",
     "postcss": "^8.2.15",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^15.3.0",
+    "@types/react": "^17.0.5",
+    "@types/react-dom": "^17.0.5",
+    "gatsby-plugin-ts-config": "^1.1.5"
   }
 }
