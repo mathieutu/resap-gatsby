@@ -9,8 +9,8 @@ const config: GatsbyConfig = {
     {
       resolve: 'gatsby-source-contentful',
       options: {
-        accessToken: '',
-        spaceId: '',
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+        spaceId: process.env.CONTENTFUL_SITE_ID,
       },
     },
     'gatsby-plugin-postcss',
