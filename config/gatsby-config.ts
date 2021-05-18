@@ -5,6 +5,7 @@ const config: GatsbyConfig = {
     title: 'Ressources Santé Précarité',
     description: 'Description test',
   },
+  flags: { PRESERVE_WEBPACK_CACHE: true },
   plugins: [
     {
       resolve: 'gatsby-source-contentful',
@@ -17,7 +18,7 @@ const config: GatsbyConfig = {
     'gatsby-plugin-postcss',
     'gatsby-plugin-image',
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-sitemap',
+    // 'gatsby-plugin-sitemap',
     {
       resolve: 'gatsby-plugin-manifest',
       options: {

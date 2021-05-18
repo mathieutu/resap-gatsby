@@ -10,6 +10,7 @@
     "typecheck": "tsc --noEmit",
     "lint": "eslint . --ext js,ts,jsx,tsx --ignore-path .gitignore",
     "lint:fix": "yarn lint --fix",
+    "build:dev": "BUILD_DEV=true gatsby build",
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
