@@ -6,8 +6,10 @@
   "author": "Mathieu TUDISCO",
   "keywords": [],
   "scripts": {
-    "develop": "gatsby develop",
-    "start": "gatsby develop",
+    "dev": "gatsby develop",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint . --ext js,ts,jsx,tsx --ignore-path .gitignore",
+    "lint:fix": "yarn lint --fix",
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
@@ -38,9 +40,18 @@
     "@types/node": "^15.3.0",
     "@types/react": "^17.0.5",
     "@types/react-dom": "^17.0.5",
+    "@typescript-eslint/eslint-plugin": "^4.24.0",
+    "@typescript-eslint/parser": "^4.24.0",
     "autoprefixer": "^10.2.5",
     "dotenv": "^9.0.2",
+    "eslint": "^7.26.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.2",
+    "gatsby-plugin-eslint": "^3.0.0",
     "gatsby-plugin-ts-config": "^1.1.5",
-    "tailwindcss": "^2.1.2"
+    "tailwindcss": "^2.1.2",
+    "typescript": "^4.2.4"
   }
 }

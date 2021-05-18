@@ -13,6 +13,7 @@ const config: GatsbyConfig = {
         spaceId: process.env.CONTENTFUL_SITE_ID,
       },
     },
+    'gatsby-plugin-eslint',
     'gatsby-plugin-postcss',
     'gatsby-plugin-image',
     'gatsby-plugin-react-helmet',
